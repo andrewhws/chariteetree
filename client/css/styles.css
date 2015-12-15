@@ -79,6 +79,7 @@ main {
 }
 
 .chipx {
+  margin: 2px;
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
@@ -273,4 +274,13 @@ main {
 
 .box__file + label * {
 	pointer-events: none;
+}
+
+.hand:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tag-hand:hover {
+  cursor: pointer;
 }

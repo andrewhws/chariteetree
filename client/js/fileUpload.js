@@ -88,7 +88,7 @@ var ajaxModern = function(e) {
       // Log the error, show an alert, whatever works for you
     }
   });
-}
+};
 
 var nonModernAjax = function() {
   var iframeName  = 'uploadiframe' + new Date().getTime();
@@ -107,7 +107,7 @@ var nonModernAjax = function() {
     $form.removeAttr('target');
     $iframe.remove();
   });
-}
+};
 
 // function sendFile(file) {
 //   var uri = $form.attr('action');

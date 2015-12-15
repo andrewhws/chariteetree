@@ -85,6 +85,10 @@ var Organization = exports.Organization = React.createClass({
     }}]
 },
 
+  componentWillMount: function(){
+    console.log('Insideof orgpage logging current org', this.props.currentOrganization);
+  },
+
   render: function() {
 
     var pastProject = this.projects.past.map(function(project, index){
@@ -114,15 +118,15 @@ var Organization = exports.Organization = React.createClass({
       <div>
           <h1>This is a new organization</h1>
           <div>
-          <h2>org name is {this.dummyOrgdata.name}</h2>
+          <h2>org id is {this.props.currentOrganization._id}</h2>
           </div>
 
           <div>
-          <h2>address is {this.dummyOrgdata.address}</h2>
+          <h2>address is {this.props.currentOrganization.address}</h2>
           </div>
 
           <div>
-            <h2>about: {this.dummyOrgdata.about}</h2>
+            <h2>about is {this.props.currentOrganization.about}</h2>
           </div>
 
           <div>

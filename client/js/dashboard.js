@@ -1,7 +1,7 @@
 "use strict";
 var React = require('react');
 
-var Dashboard = React.createClass({
+var Dashboard = exports.Dashboard = React.createClass({
   componentDidMount: function() {
     this.getData();
 

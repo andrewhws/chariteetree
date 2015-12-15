@@ -70,6 +70,7 @@ var Causes = React.createClass({
         <Cause
           key={index}
           causeID={cause.id}
+          tags={cause.tags}
           causeTitle={cause.title}
           causeImage={cause.img}
           causeSubcauses={cause.subcauses}
@@ -105,10 +106,11 @@ var Cause = React.createClass({
         <div className="cardx hoverable">
           <div className="card-image waves-effect waves-block waves-light">
             <img className="image activator" src={this.props.causeImage} />
-            <span className="card-title activator white-text shadow">{this.props.causeTitle}</span>
+            <span className="card-title activator white-text shadow"
+            >{this.props.causeTitle}</span>
           </div>
           <div className="card-reveal #f5f5f5 grey lighten-4">
-            <span className="card-title grey-text text-darken-4">{this.props.causeTitle}</span>
+            <span className="card-title grey-text text-darken-4 hand" title={this.props.tags} onClick={this.props.addCriteria}>{this.props.causeTitle}</span>
             <form action="#">
               {causeCardReveals}
             </form>
@@ -123,7 +125,7 @@ var CauseCriteria = React.createClass({
   render: function () {
     return(
       <div
-        className="hoverable"
+        className="hand"
         title={this.props.tags}
         onClick={this.props.addCriteria}
       >

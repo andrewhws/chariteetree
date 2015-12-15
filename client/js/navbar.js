@@ -56,7 +56,9 @@ var Navbar = exports.Navbar = React.createClass({
                     </div>
                   </form>
                 </li>
-                <li><a className="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Login/Signup</a></li>
+
+                {/*Login/Signup Modal*/}
+                {/*<li><a className="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Login/Signup</a></li>
                 <div id="modal1" className="modal row center-align">
                   <div className="modal-content col s12 m6">
                     <h4 className="black-text">Login</h4>
@@ -71,14 +73,11 @@ var Navbar = exports.Navbar = React.createClass({
                   <div className="modal-footer">
                     <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
                   </div>
-                </div>
-                <li><Link className="waves-effect waves-light black-text" to="/login">Login</Link></li>
-                <li><Link className="waves-effect waves-light black-text" to="/organization">organization</Link></li>
+                </div>*/}
 
+                <li><Link className="waves-effect waves-light black-text" to="/login">Login</Link></li>
                 <li><Link className="waves-effect waves-light black-text" to="/signup">Signup</Link></li>
                 <li><Link className="waves-effect waves-light black-text" to="/browse">Browse Categories</Link></li>
-                <li><Link className="waves-effect waves-light black-text" to="/projectCreate">Create a Project</Link></li>
-
               </ul>
 
               {/*Side Navigation*/}

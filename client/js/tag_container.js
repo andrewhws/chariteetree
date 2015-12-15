@@ -34,7 +34,7 @@ var Tag = exports.Tag = React.createClass({
   render: function () {
     return(
       <div
-        className="chipx valign"
+        className="chipx valign hoverable tag-hand"
         textContent={this.props.text}
         onClick={this.removeTag}
       > {/*custom chip*/}
